@@ -136,6 +136,8 @@ class ArchiveBuilder extends Builder
 
                 if ($includeArchiveChecksum) {
                     $package->setDistSha1Checksum(hash_file('sha1', $path));
+                } else {
+                    $package->setDistSha1Checksum("");
                 }
 
                 $package->setDistReference($package->getSourceReference());
