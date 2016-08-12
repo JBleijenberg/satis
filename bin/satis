@@ -1,5 +1,6 @@
 #!/usr/bin/env php
 <?php
+ini_set('memory_limit', '2G');
 
 require __DIR__.'/../src/bootstrap.php';
 
